@@ -1,0 +1,15 @@
+//sample mysql database and table storing tweets
+
+DROP SCHEMA `twitter`;
+GO
+CREATE SCHEMA `twitter` ;
+
+
+USE twitter;
+
+CREATE TABLE `tweets` (
+  `idtweets` int(11) NOT NULL AUTO_INCREMENT,
+  `tweetText` varchar(140) DEFAULT NULL,
+  `userId` int(11) NOT NULL,
+  PRIMARY KEY (`idtweets`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
